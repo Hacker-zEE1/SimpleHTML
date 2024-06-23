@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Document</title>
+    <style>
+    .NavBar {
+        background-color: cyan;
+        color: white;
+        padding: 10px;
+        border-style: none;
+        /* margin: ; */
+        text-decoration: none;
+        width:100%;
+    }
+    
+    .heading {
+        color : cyan;
+        font-size: 150%;
+        font-style: italic;
+        
+    }
+
+    .image {
+        position: relative;
+        height: 100px;
+        float: left;
+    }
+
+    #leftNotice {
+        text-align: right;
+        width: 100%;
+    }
+
+ #tabs{
+        
+        border: 0px;
+    }
+
+    table , th ,td{
+           border: 1px solid black;
+           border-collapse: collapse;
+    }
+
+    .TabHead{
+        background-color: cyan;
+        color: white;
+    }
+    .footNotes{
+        float: left;
+        width: 60%;
+      
+    }
+   
+    footer{
+            background-color: cyan;
+            color:white;
+            margin-left: 0%;
+            margin-right: 0%;
+            text-align: center;
+        position: fixed;
+            bottom: 0;    
+              width: 100%;      
+        }
+        .footTab{
+            float:right;
+            border: groove lem red;
+            border-radius: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="heading">
+        <img src="./dome.PNG" class="image">
+    <h1> Hamilton Conferenc Center</h1>
+    </div> 
+    <br>
+    <div class="NavBar">
+     <a href="#" class="NavBar">Home Page</a>
+     <a href="#" class="NavBar">Reservations</a>
+     <a href="#" class="NavBar">Facilities</a>
+     <a href="#" class="NavBar">Virtual Tour</a>
+     <a href="#" class="NavBar">Staff</a>
+     <a href="#" class="NavBar">Calender Of Events</a>
+     <a href="#" class="NavBar">Contact Info</a>
+     <a href="#" class="NavBar">Directions</a>
+     <a href="#" class="NavBar">FAQ</a>
+    </div>
+ 
+<div id="leftNotice">
+   <p>Reservation For Conference Rooms<br>
+    Tuesday , April 11
+   </p>
+</div>
+
+
+    <table style="width: 100%;">
+        <thead class="TabHead">
+            <th></th>
+            <th colspan="8">Morning </th>
+            <th colspan="2">Noon</th>
+            <th colspan="8">AfterNoon</th>
+        </thead>
+        <tbody>
+            <tr class="TabHead">
+                <th>Room</th>
+                <th>8:00</th>
+                <th>8:30</th>
+                <th>9:00</th>
+                <th>9:30</th>
+                <th>10:00</th>
+                <th>10:30</th>
+                <th>11:00</th>
+                <th>11:30</th>
+                <th>12:00</th>
+                <th>12:30</th>
+                <th>1:00</th>
+                <th>1:30</th>
+                <th>2:00</th>
+                <th>2:30</th>
+                <th>3:00</th>
+                <th>3:30</th>
+                <th>4:00</th>
+                <th>4:30</th>
+                
+            </tr>
+            <tr>
+                <td>Sunrise Room</td>
+                <td colspan="4">Marriage Encounter</td>
+                <td colspan="4"></td>
+                <td colspan="2">Marriage Encounter Luncheon</td>
+                <td colspan="4"></td>
+                <td colspan="4">Marriage Encounetr Talks</td>
+            </tr>
+            <tr>
+                <td>Mountain View Room</td>
+                <td colspan="2">BreakFast Club of Ohio</td>
+                <td colspan="2"></td>
+                <td colspan="4">Ohio Conference of Librarians</td>
+                <td colspan="2"></td>
+                <td colspan="6">Ohio Book Resale Setup</td>
+            </tr>
+            <tr>
+                <td>Arbor Hall</td>
+                <td colspan="8">Computer Expo Setup</td>
+                <td colspan="2"></td>
+                <td colspan="8">Computer Expo Opening Session</td>
+            </tr>
+            <tr>
+                <td>Mitchell Theatre</td>
+                <td colspan="14"></td>
+                <td colspan="4">Youth Theatre</td>
+            </tr>
+            <tr>
+                <td>Gold Room</td>
+                <td colspan="2"></td>
+                <td colspan="3">The Tompkins Group</td>
+                <td colspan="3">Person Planning</td>
+                <td colspan="4"></td>
+                <td colspan="3">Mothers of Multiples</td>
+                <td colspan="3">Teen Connection</td>
+            </tr>
+            <tr>
+                <td>Blue Room</td>
+                <td colspan="2"></td>
+                <td colspan="3">Retirement Planning</td>
+                <td colspan="3">The Senior Group</td>
+                <td colspan="2">Senior Luncheon</td>
+                <td colspan="5">Senior Classes</td>
+                <td colspan="3">Tutoring</td>
+            </tr>
+            <tr>
+                <td>Green Room</td>
+                <td colspan="2"></td>
+                <td colspan="4">Driver's Ed</td>
+                <td colspan="5">Movie Club</td>
+                <td colspan="4"></td>
+                <td colspan="3">Tutoring</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    
+        <div class="footNotes">
+               <p>
+                  To reserve a room, Please contact Yancy Inwe at 
+                  extension 388 or by e-mail at 
+                  <a href="yancyinwe@hconfcenter.org">yancyinwe@hconfcenter.org</a> Reservation should be<br>
+                   made atleast 48 hours in advance. Cancellations
+                   require 24 hour notice. Room deposits will not be 
+                   returned for cancellations within 24 hours of the 
+                   scheduled event.
+               </p>
+        </div>
+
+        <div class="footTab">
+                <table>
+                    <tr id="tabs">
+                    <td id="tabs">Sunrise Room</td>
+                    <td id="tabs">Maximum Capacity: 80</td>
+                </tr>
+                <tr id="tabs">
+                    <td id="tabs">Mountain View Room</td>
+                    <td id="tabs">Maximum Capacity: 150</td>
+                </tr>
+                <tr id="tabs">
+                    <td id="tabs">Arbor Hall</td>
+                    <td id="tabs">Maximum Capacity: 190</td>
+                </tr>
+                <tr id="tabs">
+                    <td id="tabs">Mitchell Theatre</td>
+                    <td id="tabs">Maximum Capacity: 120</td>
+                </tr>
+                <tr id="tabs">
+                    <td id="tabs">Gold Room</td>
+                    <td id="tabs">Maximum Capacity: 40</td>
+                </tr>
+                <tr id="tabs">
+                    <td id="tabs">Blue Room</td>
+                    <td id="tabs">Maximum Capacity: 30</td>
+                </tr>
+                <tr id="tabs">
+                    <td id="tabs">Green Room</td>
+                    <td id="tabs">Maximum Capacity: 55</td>
+                </tr>
+                </table>
+                
+        </div>
+        
+    <footer>
+      HAMILTON CONFERENCE CENTER . 8711 WEST PARK LANE . HAMILTON, oh 45011 . (513)555-7911
+    </footer>
+</body>
+</html>
+

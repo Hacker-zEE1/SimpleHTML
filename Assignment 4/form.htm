@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tab , tr, td{
+
+            border-style: solid ;
+            border-collapse: collapse; 
+            border-color: black;
+            background-color: pink;
+        }
+#innerTable {
+     border : 0px;
+}
+ 
+
+    </style>
+</head>
+<body>
+    <div style="  display: flex; justify-content: center;">
+            <table id="tab" style="border-color: black;">
+                <form>
+                <tr>
+                    <td><label for="name">Name</label>
+                    <td><input type="text" name="name" id="name">
+                </tr>
+                <tr>
+                    <td><label for="emp">Employee Code</label>
+                    <td><input type="text" name="emp" id="emp">
+                </tr>
+                <tr>
+                    <td><label for="dept">Department</label>
+                   <td id="deptinner">
+                    <input type="radio" name="dept" id="dept" value="Admin">
+                    <label for="dept">Admin</label><br>
+
+                    <input type="radio" name="dept" id="dept" value="HR">
+                    <label for="dept">HR</label><br>
+
+                    <input type="radio" name="dept" id="dept" value="Technical">
+                    <label for="dept">Technical</label><br>
+
+                    <input type="radio" name="dept" id="dept" value="Accounts">
+                    <label for="dept">Accounts</label><br>
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Date of Joining</label></td>
+                    <td>
+                        <table id="innerTable">
+                            <tr id="innerTable">
+                                <td id="innerTable"><input type="text" name="date" id="date" size="2">/</td>
+                                <td id="innerTable"><input type="text" name="date" id="month" size="2">/</td>
+                                <td id="innerTable"><input type="text" name="date" id="year" size="2"></td>
+                            </tr>
+                            <tr id="innerTable">
+                                <td id="innerTable">dd</td>
+                                <td id="innerTable">mm</td>
+                                <td id="innerTable">yyyy</td>
+                            </tr>
+                        </table>
+                        
+                        
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Addrss</label></td>
+                    <td>
+                        <textarea row="4" cols="20" name="addr" id="addr"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="dept">Department</label>
+                   <td>
+                    <input type="checkbox" name="tpa" id="tpa" value="HTML">
+                    <label for="dept">HTML/DHTML</label><br>
+
+                    <input type="checkbox" name="tpa" id="tpa" value="JAVA">
+                    <label for="dept">JAVA</label><br>
+
+                    <input type="checkbox" name="tpa" id="tpa" value="Client">
+                    <label for="dept">CLIENT/SERVER</label><br>
+
+                    <input type="checkbox" name="tpa" id="tpa" value=".NET">
+                    <label for="dept">.NET</label><br>
+                    </td>
+                    </td>
+                </tr>
+            <tr>
+                <td>
+                    <label for="TP">Training programs need to attend</label>
+                </td>
+                <td>
+                    <select name="TP" id="TP" multiple size="1">
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="JStruts">JStruts</option>    
+                    </select>
+                </td>
+            </tr>
+                <tr>
+                    <td><label>Send the Information at</label></td>
+                    <td>empinfo@patni.com</td>
+                </tr>
+
+            
+        </form>
+    </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        *{
+            border: 1px solid black;
+        }
+        #tab1, td{
+            border-spacing: 100px;
+        }
+        #frm1{
+            border: 1px solid black;
+        }
+        /* #mydiv{
+            /* border: 1px solid black; 
+            padding: 10px;
+            margin: 10px;
+        } */
+        #txa,#l1{
+            margin-left: 100px;
+        }
+        #tab2, dt{
+            margin-left:100px;
+            
+        }
+    </style> -->
+</head>
+<body>
+    <h1>Internet Usage Survey</h1>
+    <p>This survey is being conducted to help identify the Internet usge patterns of our customers.</p><br>
+    <p>Please take a few moments to complete and submit this short form. Thankyou for your cooperation</p>
+    <div id="mydiv">
+   <form id="frm1">
+    <table id="tab1">
+        <tr>
+            <td>What type of Internet Connection do you have?<br>(Select One)</td>
+            <td>
+                <select name="menu" id="menu" size = "4">
+                <option value="Dial-up">Dial-up</option>
+                <option value="DSL">DSL</option>
+                <option value="Cable">High Speed CableCable</option>
+                <option value="other">Other</option>
+                
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>what type of Computer do you use most at home?</td>
+            <td>
+                <input type="radio" name="radio" id="radi1" name="radi" value="radi"/>
+                <label for="radi1">Desktop</label>
+                <input type="radio" name="radio" id="radi2" name="radi" value="radi"/>
+                <label for="radi2">Laptop</label>
+            </td>
+        </tr>
+        <tr>
+            <td>How would you describe your main reason for using the internet?</td>
+            <td>
+                <input type="radio" name="radio" id="radi1" name="radi" value="radi"/>
+                <label for="radi1">To do work-related activities</label><br>
+                <input type="radio" name="radio" id="radi2" name="radi" value="radi"/>
+                <label for="radi2">To do school-related activities</label><br>
+                <input type="radio" name="radio" id="radi3" name="radi" value="radi"/>
+                <label for="radi3">For entertainment purpose</label><br>
+                <input type="radio" name="radio" id="radi4" name="radi" value="radi"/>
+                <label for="radi4">Other activities</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Types of site visited</legend>
+                    <input type="checkbox" id="chk1" name="nm1" value="val1"/>
+                    <label for="chk1">Self Improvement</label><br>
+                    <input type="checkbox" id="chk2" name="nm2" value="val2"/>
+                    <label for="chk2">Entertainment</label><br>
+                    <input type="checkbox" id="chk3" name="nm3" value="val3"/>
+                    <label for="chk3">News and Sports</label><br>
+                    <input type="checkbox" id="chk4" name="nm4" value="val4"/>
+                    <label for="chk4">Refrence</label><br>
+                    <input type="checkbox" id="chk5" name="nm5" value="val5"/>
+                    <label for="chk5">Email</label><br>
+
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>Time spent using Internet</legend>
+                    <input type="checkbox" id="chk1" name="nm1" value="val1"/>
+                    <label for="chk1">0-3 Hours</label><br>
+                    <input type="checkbox" id="chk2" name="nm2" value="val2"/>
+                    <label for="chk2">4-6 Hours</label><br>
+                    <input type="checkbox" id="chk3" name="nm3" value="val3"/>
+                    <label for="chk3">7-10 Hours</label><br>
+                    <input type="checkbox" id="chk4" name="nm4" value="val4"/>
+                    <label for="chk4">11-15 Hours</label><br>
+                    <input type="checkbox" id="chk5" name="nm5" value="val5"/>
+                    <label for="chk5">15+ Houts</label><br>
+
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label id="l1" for="txa">Please comment on your opinions cncerning Internet privacy and safety</label><br>
+                <textarea rows= "4" cols="70" name="txa" id="txa" value="txa"></textarea><br><br>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="txt1">First Name:</label>
+                <input type="text"size="10" id="txt1" name="nm1" value="val1"/>
+            </td>
+            <td>
+                <label for="txt2">Last Name:</label>
+                <input type="text" size= "10" id="txt2" name="nm2" value="val2"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="txt3">Age:</label>
+                <input type="text" id="txt3" name="nm3" value="val3"/>
+            </td>
+            <td>
+                <label for="txt4">Zip Code:</label>
+                <input type="text" id="txt4" name="nm4" value="val4"/>
+            </td>
+        </tr>
+
+    </table>
+    <br><br>
+    
+    <!-- <table id="tab2">
+        <tr>
+            <td>
+                <label for="txt1">First Name:</label>
+                <input type="text"size="10" id="txt1" name="nm1" value="val1"/>
+            </td>
+            <td>
+                <label for="txt2">Last Name:</label>
+                <input type="text" size= "10" id="txt2" name="nm2" value="val2"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="txt3">Age:</label>
+                <input type="text" id="txt3" name="nm3" value="val3"/>
+            </td>
+            <td>
+                <label for="txt4">Zip Code:</label>
+                <input type="text" id="txt4" name="nm4" value="val4"/>
+            </td>
+        </tr>
+    </table> -->
+    <button type= "submit" id="btn1" name="btn" value="btn1" style="display: inline-block; margin:0 auto">Click to Submit</button>
+    <button type= "submit" id="btn2" name="btn" value="btn2" style="display: inline-block; margin:0 auto">Clear Form</button>
+
+</form>
+</div>
+</body>
+</html>
